@@ -11,10 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <!--      <Folder Include="Resources" />-->
-        <None CopyToOutputDirectory="Always" Include="Resources/**"/>
-        <None Include="wwwroot\Resources\Background.png"/>
-        <None Include="wwwroot\Resources\Background.svg"/>
+        <_ContentIncludedByDefault Remove="wwwroot\Resources\Background.png"/>
+        <_ContentIncludedByDefault Remove="wwwroot\Resources\Background.svg"/>
     </ItemGroup>
-
 </Project>
