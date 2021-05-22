@@ -18,7 +18,7 @@ jobs:
       run: dotnet publish ./GitHub-MainPage/GitHub-MainPage.csproj -c Release -o release --nologo
       
     - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-      run: sed -i 's/base href="\/"/base href="\/itHub-MainPage\/"/g' release/wwwroot/index.html
+      run: sed -i 's/base href="\/"/base href="\/GitHub-MainPage\/"/g' release/wwwroot/index.html
 
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
